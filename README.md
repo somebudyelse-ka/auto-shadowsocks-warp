@@ -12,7 +12,7 @@ That's normal. Don't worry, everything will still work fine. It's basically inst
 
 After installing everything, you will probably want to edit your Shadowsocks configuration to change ports, password, etc.
 ```
-sudo nano /etc/shadowsocks/config.json
+sudo nano /etc/shadowsocks-libev/config.json
 ```
 Tips:
 * You will probably want the host to be simply `"0.0.0.0"`
