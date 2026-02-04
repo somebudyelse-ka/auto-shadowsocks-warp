@@ -7,6 +7,6 @@ sudo apt-get update && sudo apt-get install -y cloudflare-warp
 yes | warp-cli registration new
 warp-cli mode proxy
 warp-cli connect
-sudo sed -i 's/\bsocks4\b/socks5/g; s/\b9050\b/40000/g' /etc/proxychains.conf
+sudo sed -i 's/\bsocks4\b/socks5/g; s/\b9050\b/40000/g' /etc/proxychains4.conf
 sudo sed -i 's|^ExecStart=|ExecStart=/usr/bin/proxychains4 |' /lib/systemd/system/shadowsocks-libev.service
 sudo systemctl daemon-reload && sudo systemctl restart shadowsocks-libev
